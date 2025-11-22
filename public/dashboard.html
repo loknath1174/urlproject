@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white p-8">
+
+  <h1 class="text-3xl font-bold mb-6 text-center">URL Dashboard</h1>
+
+  <table class="w-full bg-gray-800 rounded-xl overflow-hidden shadow-xl">
+    <thead>
+      <tr class="bg-gray-700 text-left">
+        <th class="p-4">Short URL</th>
+        <th class="p-4">Long URL</th>
+        <th class="p-4">Clicks</th>
+      </tr>
+    </thead>
+
+    <tbody id="urlTable"></tbody>
+  </table>
+
+  <a href="index.html" class="block text-center mt-6 text-gray-300 underline">
+    ← Back to Shortener
+  </a>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
