@@ -79,10 +79,8 @@ app.get("/api/urls", async (req, res) => {
 });
 
 // MONGODB CONNECT
-mongoose
-  .connect(
-    "mongodb+srv://Loknath:Loki0711@cluster0.126fj3k.mongodb.net/shortenerdb?retryWrites=true&w=majority&appName=Cluster0"
-  )
+mongoose.connect(process.env.MONGODB_URI)
+
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
 
