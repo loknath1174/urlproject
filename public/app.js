@@ -1,6 +1,9 @@
+const API ="https://urlproject-nyyb.onrender.com";
+
 async function shortenUrl() {
   const longUrl = document.getElementById("longUrl").value;
 
+  
   const res = await fetch("http://localhost:5000/shorten", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
