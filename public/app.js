@@ -1,10 +1,9 @@
-const API ="https://urlproject-nyyb.onrender.com";
+const API = "https://urlproject-1.onrender.com";
 
 async function shortenUrl() {
   const longUrl = document.getElementById("longUrl").value;
 
-  
-  const res = await fetch("http://localhost:5000/shorten", {
+  const res = await fetch(`${API}/shorten`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ longUrl })
